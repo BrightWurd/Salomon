@@ -122,7 +122,6 @@ video {
 .text-holder {
   text-align: center;
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -130,16 +129,9 @@ video {
 
 .text-holder h1 {
   display: inline-block;
-  font-size: 2.9rem;
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
+  font-size: 3.5rem;
 }
  
- 
-
-
 .text-holder h3 {
   display: inline-block;
   max-width: 500px;
@@ -690,8 +682,49 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
+/** the poppins fonts Styling **/
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/** The karla fonts styling **/ 
+
+.karla {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 @media (max-width: 1200px) {
   /* Styles to apply when the viewport height is 1200px or less */
+
+  /** the styling for the jumbotron **/
+  .Jumbo-text-with-lines > hr {
+    height: 130px; /* styling the red lines in th jumbotron  */
+  }
+  
+
+  .text-holder h1 {
+    display: inline-block; /* styling the jumbotron h1 */
+    font-size: 2.6rem;
+  }
+
+  
+.text-holder h3 {
+  display: inline-block; /* Styling the jumbotron h3 */
+  max-width: 500px;
+  margin: auto;
+  font-size: 1rem;
+}
 
   .the-multidiverse-learning-tag {
   height: 100%;
@@ -721,6 +754,25 @@ footer {
   .part-two{
     height: 1050px;
   }
+
+  part-three {
+    height: 800px;
+  }
+
+  .part-three > .full-container > .the-multidiverse-learning-tag > .boxy{
+    grid-template-columns: 1fr;
+  }
+  
+
+.boxy > .move {
+  position: relative;
+  left: 0%;
+  width: 40%;
+  height: 600px;
+}
+  .boxy > li > img{
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   .The-first-Stack {
@@ -741,6 +793,27 @@ footer {
 }
 
 @media (max-width: 900px) {
+
+  
+  /** the styling for the jumbotron **/
+  .Jumbo-text-with-lines > hr {
+    height: 100px; /* styling the red lines in th jumbotron  */
+  }
+  
+
+  .text-holder h1 {
+    display: inline-block; /* styling the jumbotron h1 */
+    font-size: 2.6rem;
+  }
+
+  
+.text-holder h3 {
+  display: inline-block; /* Styling the jumbotron h3 */
+  max-width: 500px;
+  margin: auto;
+  font-size: 1rem;
+}
+
   .The-first-Stack {
     height: 1000px; /* Height at 900px screen width */  
   }
@@ -762,5 +835,57 @@ footer {
     row-gap: 70px;
   }
     
+  .gradient-overlay{
+    overflow: hidden;
+    height: 700px;
+  }
+
+  video{
+    scale: 2;
+    height: 100%;
+  }
+
+  .text-holder > h1{
+    font-size: 1.5rem;
+  }
+
+  .Jumbo-text-with-lines > hr{
+    height:170px; /* styling the red lines in th jumbotron  */
+  }
+  
+  .text-holder h3 {
+    width: 300px;
 }
 
+  
+.little-questions > ul {
+    flex-direction: column; /*the little hints below the jumbotron */
+  gap: 20px;
+  }
+
+
+}
+
+
+@media (max-width: 600px){
+nav > .logo > img{
+  width:100px;
+}
+
+.Navigation-buttons > ul {
+  gap: 0;
+}
+
+
+.Navigation-buttons > ul > li > button {
+  width: 10px;
+}
+
+.Navigation-buttons > ul > li > button > i {
+  font-size: 20px;
+}
+
+  video{
+    scale: 5;
+  }
+}
