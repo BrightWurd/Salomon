@@ -131,7 +131,7 @@ video {
   display: inline-block;
   font-size: 3.5rem;
 }
- 
+
 .text-holder h3 {
   display: inline-block;
   max-width: 500px;
@@ -187,7 +187,7 @@ video {
   width: 100%;
   margin: auto;
   gap: 10%;
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 800px;
 }
 
@@ -327,7 +327,7 @@ video {
   width: 20px;
   height: 20px;
   margin: 17px 18px 0 18px;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   fill: #f0eeef;
 }
 
@@ -376,6 +376,7 @@ class being the-first0stack and part two */
 
 .jump {
   font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .the-enroll-and-join-us-holder {
@@ -594,6 +595,7 @@ footer {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
 }
 
 .sectiont {
@@ -692,14 +694,13 @@ footer {
   font-style: normal;
 }
 
-
 .poppins-bold {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-/** The karla fonts styling **/ 
+/** The karla fonts styling **/
 
 .karla {
   font-family: "Karla", sans-serif;
@@ -707,30 +708,28 @@ footer {
   font-weight: 500;
   font-style: normal;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   /* Styles to apply when the viewport height is 1200px or less */
 
   /** the styling for the jumbotron **/
   .Jumbo-text-with-lines > hr {
     height: 130px; /* styling the red lines in th jumbotron  */
   }
-  
 
   .text-holder h1 {
     display: inline-block; /* styling the jumbotron h1 */
     font-size: 2.6rem;
   }
 
-  
-.text-holder h3 {
-  display: inline-block; /* Styling the jumbotron h3 */
-  max-width: 500px;
-  margin: auto;
-  font-size: 1rem;
-}
+  .text-holder h3 {
+    display: inline-block; /* Styling the jumbotron h3 */
+    max-width: 500px;
+    margin: auto;
+    font-size: 1rem;
+  }
 
   .the-multidiverse-learning-tag {
-  height: 100%;
+    height: 100%;
   }
 
   .the-multidiverse-learning-tag > ul {
@@ -739,42 +738,51 @@ footer {
     row-gap: 70px;
   }
 
-  .The-first-Stack{
-    height: 1400px;
+  .The-first-Stack {
+    height: 1450px;
   }
 
-  .the-image-and-about-us-holder{
+  .the-image-and-about-us-holder {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 1fr;
   }
-  
-  .the-divider{
+
+  .the-divider {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .part-two{
-    height: 1050px;
+
+  .part-two {
+    height: 1200px;
+  }
+
+  .the-imag-side {
+    height: 370px;
   }
 
   part-three {
     height: 800px;
   }
 
-  .part-three > .full-container > .the-multidiverse-learning-tag > .boxy{
+  .part-three > .full-container > .the-multidiverse-learning-tag > .boxy {
     grid-template-columns: 1fr;
   }
-  
 
-.boxy > .move {
-  position: relative;
-  left: 0%;
-  width: 40%;
-  height: 600px;
-}
-  .boxy > li > img{
+  .boxy > .move {
+    position: relative;
+    left: 0%;
+    width: 40%;
+    height: 600px;
+  }
+  .boxy > li > img {
     width: 100%;
+  }
+
+  .dip {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 @media (max-width: 1100px) {
@@ -792,110 +800,147 @@ footer {
     grid-template-rows: repeat(2, 30%);
     row-gap: 70px;
   }
-    
+
+  .part-two {
+    height: 1350px;
+  }
+
+  .part-three {
+    height: 1250px;
+  }
 }
 
 @media (max-width: 900px) {
-
-  
   /** the styling for the jumbotron **/
   .Jumbo-text-with-lines > hr {
     height: 100px; /* styling the red lines in th jumbotron  */
   }
-  
 
   .text-holder h1 {
     display: inline-block; /* styling the jumbotron h1 */
     font-size: 2.6rem;
   }
 
-  
-.text-holder h3 {
-  display: inline-block; /* Styling the jumbotron h3 */
-  max-width: 500px;
-  margin: auto;
-  font-size: 1rem;
-}
+  .text-holder h3 {
+    display: inline-block; /* Styling the jumbotron h3 */
+    max-width: 500px;
+    margin: auto;
+    font-size: 1rem;
+  }
 
   .The-first-Stack {
-    height: 1000px; /* Height at 900px screen width */  
+    height: 1000px; /* Height at 900px screen width */
   }
   .the-multidiverse-learning-tag > ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 29%);
     row-gap: 70px;
   }
-  
+
+  .part-two {
+    height: 1400px;
+  }
+
+  .part-three {
+    height: 1300px;
+  }
+
+  .second {
+    padding-top: 70px;
+  }
 }
 
 @media (max-width: 800px) {
   .The-first-Stack {
-    height: 1000px; /* Height at 800px screen width */
+    height: 900px; /* Height at 800px screen width */
   }
   .the-multidiverse-learning-tag > ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 27%);
     row-gap: 70px;
   }
-    
-  .gradient-overlay{
+
+  .gradient-overlay {
     overflow: hidden;
     height: 700px;
   }
 
-  video{
+  video {
     scale: 2;
     height: 100%;
   }
 
-  .text-holder > h1{
+  .text-holder > h1 {
     font-size: 1.5rem;
   }
 
-  .Jumbo-text-with-lines > hr{
-    height:170px; /* styling the red lines in th jumbotron  */
+  .Jumbo-text-with-lines > hr {
+    height: 170px; /* styling the red lines in th jumbotron  */
   }
-  
+
   .text-holder h3 {
     width: 300px;
-}
+  }
 
-  
-.little-questions > ul {
+  .little-questions > ul {
     flex-direction: column; /*the little hints below the jumbotron */
-  gap: 20px;
+    gap: 20px;
   }
 
   .header-txt-holder {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .header-txt-holder > h1 {
+    font-size: 1.6rem;
+  }
+  .part-two {
+    height: 1350px;
+  }
 }
 
-.header-txt-holder > h1 {
-  font-size: 1.6rem;
-}
-}
-
-
-@media (max-width: 600px){
-nav > .logo > img{
-  width:100px;
-}
-
-.Navigation-buttons > ul {
-  gap: 0;
-}
-
-
-.Navigation-buttons > ul > li > button {
-  width: 10px;
+@media (max-width: 700px) {
+  .The-first-Stack {
+    height: 800px;
+  }
+  .the-multidiverse-learning-tag > ul > li > .p {
+    height: 110px;
+    font-size: 1.2rem;
+    bottom: 113px;
+  }
+  .button {
+    width: 50px;
+    height: 50px;
+    bottom: 160px;
+  }
 }
 
-.Navigation-buttons > ul > li > button > i {
-  font-size: 20px;
-}
+@media (max-width: 600px) {
+  nav > .logo > img {
+    width: 100px;
+  }
 
-  video{
+  .Navigation-buttons > ul {
+    gap: 0;
+  }
+
+  .Navigation-buttons > ul > li > button {
+    width: 10px;
+  }
+
+  .Navigation-buttons > ul > li > button > i {
+    font-size: 20px;
+  }
+
+  video {
     scale: 5;
   }
+
+  .The-first-Stack {
+    height: 730px;
+  }
+}
+
+@media (max-width: 500px) {
 }
