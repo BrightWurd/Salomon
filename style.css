@@ -845,11 +845,15 @@ footer {
   }
 
   .part-three {
-    height: 1300px;
+    height: 1500px;
   }
 
   .second {
     padding-top: 70px;
+  }
+
+  .the-multidiverse-learning-tag > .boxy > .move {
+    width: 50%;
   }
 }
 
@@ -904,6 +908,10 @@ footer {
   .the-image-and-about-us-holder > .the-text-side {
     transform: translateY(-30%);
   }
+
+  .part-three {
+    height: 1400px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -921,6 +929,10 @@ footer {
 
   .part-two {
     height: 1400px;
+  }
+
+  .part-three {
+    height: 1300px;
   }
 }
 
@@ -966,6 +978,18 @@ footer {
   .the-image-and-about-us-holder > .the-text-side {
     transform: translateY(-60%);
   }
+
+  .part-three {
+    height: 1600px;
+  }
+
+  .the-multidiverse-learning-tag > .boxy > .move {
+    width: 90%;
+  }
+
+  .the-multidiverse-learning-tag > .boxy {
+    row-gap: 10%;
+  }
 }
 
 @media (max-width: 550px) {
@@ -984,7 +1008,7 @@ footer {
   }
 
   .part-two {
-    height: 1400px;
+    height: 1000px;
   }
 
   .The-first-Stack > .full-container > .header-txt-holder > h3 {
@@ -993,6 +1017,10 @@ footer {
 
   .karla {
     font-size: 0.8rem;
+  }
+
+  .the-image-and-about-us-holder > .the-text-side {
+    transform: translateY(-50%);
   }
 }
 
@@ -1006,7 +1034,7 @@ footer {
   }
 
   .part-two {
-    height: 1750px;
+    height: 1300px;
   }
 
   .the-enroll-and-join-us-holder {
@@ -1022,7 +1050,7 @@ footer {
   }
 
   .part-two {
-    height: 1700px;
+    height: 1200px;
   }
 
   .the-image-and-about-us-holder > .the-imag-side > .the-divider > img {
@@ -1032,6 +1060,10 @@ footer {
   .the-image-and-about-us-holder > .the-text-side {
     transform: translateY(-80%);
   }
+
+  .the-multidiverse-learning-tag > .boxy > li > .Agenda > .karla {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 370px) {
@@ -1040,6 +1072,6 @@ footer {
   }
 
   .part-two {
-    height: 1900px;
+    height: 1300px;
   }
 }
