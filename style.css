@@ -3,6 +3,9 @@
   margin: 0;
 }
 /* Your CSS styles here */
+body {
+  background-color: white;
+}
 
 .every-holder {
   max-width: 1800px;
@@ -896,7 +899,10 @@ footer {
     font-size: 1.6rem;
   }
   .part-two {
-    height: 1350px;
+    height: 1300px;
+  }
+  .the-image-and-about-us-holder > .the-text-side {
+    transform: translateY(-30%);
   }
 }
 
@@ -905,14 +911,16 @@ footer {
     height: 800px;
   }
   .the-multidiverse-learning-tag > ul > li > .p {
-    height: 110px;
+    height: 115px;
     font-size: 1.2rem;
-    bottom: 113px;
+    bottom: 117px;
   }
   .button {
-    width: 50px;
-    height: 50px;
-    bottom: 160px;
+    bottom: 170px;
+  }
+
+  .part-two {
+    height: 1400px;
   }
 }
 
@@ -938,9 +946,92 @@ footer {
   }
 
   .The-first-Stack {
-    height: 730px;
+    height: 2000px;
+  }
+
+  .the-multidiverse-learning-tag > ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 27%);
+    row-gap: 20px;
+  }
+
+  .part-two {
+    height: 1300px;
+  }
+
+  .the-image-and-about-us-holder > .the-imag-side > .the-divider > img {
+    width: 350px;
+  }
+
+  .the-image-and-about-us-holder > .the-text-side {
+    transform: translateY(-60%);
+  }
+}
+
+@media (max-width: 550px) {
+  .The-first-Stack {
+    height: 1900px;
+  }
+
+  .part-two {
+    height: 1400px;
   }
 }
 
 @media (max-width: 500px) {
+  .The-first-Stack {
+    height: 1750px;
+  }
+
+  .part-two {
+    height: 1400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .The-first-Stack {
+    height: 1550px;
+  }
+
+  .the-multidiverse-learning-tag > ul {
+    row-gap: 0px;
+  }
+
+  .part-two {
+    height: 1750px;
+  }
+
+  .the-enroll-and-join-us-holder {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .The-first-Stack {
+    height: 1400px;
+  }
+
+  .part-two {
+    height: 1600px;
+  }
+
+  .the-image-and-about-us-holder > .the-imag-side > .the-divider > img {
+    width: 200px;
+  }
+
+  .the-image-and-about-us-holder > .the-text-side {
+    transform: translateY(-80%);
+  }
+}
+
+@media (max-width: 370px) {
+  .The-first-Stack {
+    height: 1400px;
+  }
+
+  .part-two {
+    height: 1900px;
+  }
 }
