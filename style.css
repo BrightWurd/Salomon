@@ -986,6 +986,14 @@ footer {
   .part-two {
     height: 1400px;
   }
+
+  .The-first-Stack > .full-container > .header-txt-holder > h3 {
+    font-size: 0.8rem;
+  }
+
+  .karla {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1014,7 +1022,7 @@ footer {
   }
 
   .part-two {
-    height: 1600px;
+    height: 1700px;
   }
 
   .the-image-and-about-us-holder > .the-imag-side > .the-divider > img {
@@ -1028,7 +1036,7 @@ footer {
 
 @media (max-width: 370px) {
   .The-first-Stack {
-    height: 1400px;
+    height: 1200px;
   }
 
   .part-two {
