@@ -347,7 +347,7 @@ class being the-first0stack and part two */
   margin-top: 200px;
   background-color: #9f0606fe;
   color: white;
-  height: 800px;
+  height: 900px;
 }
 
 .third-hr {
@@ -636,6 +636,7 @@ footer {
   /* Add styles for each column, such as padding, border, and background color */
   background-color: rgb(238, 234, 235);
   overflow: hidden;
+  padding-bottom: 20px;
 }
 
 .column img {
@@ -651,7 +652,7 @@ footer {
   gap: 10%;
   font-size: 1.3rem;
   position: relative;
-  top: 3%;
+  top: 1%;
   justify-content: center;
 }
 
@@ -671,7 +672,7 @@ footer {
   width: 100%;
   height: 100%;
   position: relative;
-  bottom: 101%;
+  bottom: 100%;
   color: white;
   display: flex;
   justify-content: center;
@@ -711,6 +712,7 @@ footer {
   font-weight: 500;
   font-style: normal;
 }
+
 @media (max-width: 1350px) {
   /* Styles to apply when the viewport height is 1200px or less */
 
@@ -787,10 +789,74 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
+
+  .part-four {
+    height: 800px;
+  }
+
+  .take {
+    height: 700px;
+  }
+
+  /* For WebKit browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+  }
+
+  /* Track (background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100; /* Light gray background */
+    border-radius: 0px;
+    display: none;
+  }
+
+  /* Handle (scrollbar thumb) */
+  ::-webkit-scrollbar-thumb {
+    display: none;
+    background-color: #88888800; /* Darker gray thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: 0px solid #f1f1f100; /* Padding around thumb */
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #55555502; /* Darker gray when hovered */
+  }
+
+  /* Firefox Scrollbar */
+  html {
+    scrollbar-width: thin; /* Makes scrollbar thinner */
+    scrollbar-color: #88888807 #f1f1f105; /* Thumb and track color */
+  }
 }
 @media (max-width: 1100px) {
   .The-first-Stack {
     height: 1300px; /* Height at 1100px screen width */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 130px;
+  }
+
+  .containert {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 1200px;
+  }
+
+  .part-four {
+    height: 1100px;
+  }
+
+  .part-four > .the-container > .grid-container > .grid-item > p {
+    font-size: 1rem;
+  }
+
+  .take {
+    height: 1450px;
   }
 }
 
@@ -810,6 +876,14 @@ footer {
 
   .part-three {
     height: 1250px;
+  }
+
+  .part-four {
+    height: 1100px;
+  }
+
+  .take {
+    height: 1450px;
   }
 }
 
@@ -854,6 +928,18 @@ footer {
 
   .the-multidiverse-learning-tag > .boxy > .move {
     width: 50%;
+  }
+
+  .containert {
+    height: 1000px;
+  }
+
+  .part-four {
+    height: 1100px;
+  }
+
+  .take {
+    height: 1200px;
   }
 }
 
@@ -912,6 +998,14 @@ footer {
   .part-three {
     height: 1400px;
   }
+
+  .part-four {
+    height: 1100px;
+  }
+
+  .take {
+    height: 1200px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -934,6 +1028,39 @@ footer {
   .part-three {
     height: 1300px;
   }
+
+  .part-four {
+    height: 1400px;
+  }
+
+  .the-container {
+    width: 50%;
+  }
+
+  .grid-item {
+    background-color: #f0f0f0;
+    text-align: center;
+    height: 170px;
+    overflow: hidden;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-top: 130px;
+  }
+
+  .containert {
+    height: 900px;
+  }
+
+  .part-four {
+    height: 1400px;
+  }
+
+  .take {
+    height: 1100px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -942,15 +1069,17 @@ footer {
   }
 
   .Navigation-buttons > ul {
-    gap: 0;
+    gap: 1%;
+    position: relative;
+    left: 15%;
   }
 
-  .Navigation-buttons > ul > li > button {
+  /* .Navigation-buttons > ul > li > button {
     width: 10px;
-  }
+  } */
 
   .Navigation-buttons > ul > li > button > i {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   video {
@@ -990,6 +1119,19 @@ footer {
   .the-multidiverse-learning-tag > .boxy {
     row-gap: 10%;
   }
+
+  .part-four {
+    height: 1400px;
+  }
+
+  .containert {
+    grid-template-columns: 1fr;
+    height: 1800px;
+  }
+
+  .take {
+    height: 2100px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -999,6 +1141,18 @@ footer {
 
   .part-two {
     height: 1400px;
+  }
+
+  .part-three {
+    height: 1500px;
+  }
+
+  .part-four {
+    height: 1400px;
+  }
+
+  .take {
+    height: 2200px;
   }
 }
 
@@ -1022,6 +1176,26 @@ footer {
   .the-image-and-about-us-holder > .the-text-side {
     transform: translateY(-50%);
   }
+
+  .part-three {
+    height: 1500px;
+  }
+
+  .part-four {
+    height: 1400px;
+  }
+
+  .the-container {
+    width: 80%;
+  }
+
+  .containert {
+    height: 1200px;
+  }
+
+  .take {
+    height: 1400px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1041,6 +1215,18 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 10px;
+  }
+
+  .part-three {
+    height: 1300px;
+  }
+
+  .part-four {
+    height: 1400px;
+  }
+
+  .take {
+    height: 1400px;
   }
 }
 
@@ -1064,6 +1250,10 @@ footer {
   .the-multidiverse-learning-tag > .boxy > li > .Agenda > .karla {
     font-size: 0.8rem;
   }
+
+  .part-four {
+    height: 1400px;
+  }
 }
 
 @media (max-width: 370px) {
@@ -1073,5 +1263,13 @@ footer {
 
   .part-two {
     height: 1300px;
+  }
+
+  .part-four {
+    height: 1400px;
+  }
+
+  .take {
+    height: 1450px;
   }
 }
