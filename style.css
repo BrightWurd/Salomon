@@ -7,7 +7,7 @@ body {
   background-color: white;
 }
 
-.every-holder {
+.everything-holder {
   max-width: 1800px;
   margin: auto;
 }
@@ -15,7 +15,7 @@ body {
 section {
   /*The Style for the section holding the jumbotron and the navbar*/
   width: 100%;
-  height: 100%;
+  height: 900px;
   background-image: linear-gradient(
     to top,
     #be2e2e 0%,
@@ -27,7 +27,7 @@ section {
 }
 
 nav {
-  width: 90%;
+  width: 1600px;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -36,6 +36,62 @@ nav {
   margin-left: 5%;
   margin-top: 1%;
   z-index: 1000; /* Ensure it has the highest z-index */
+}
+
+.Jumbo-text-with-lines {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 1800px;
+  top: 10px;
+  gap: 50px;
+  margin: auto;
+  z-index: 99;
+  border: none;
+}
+
+.Jumbo-text-with-lines > hr {
+  width: 2px;
+  height: 130px;
+  background-color: rgb(255, 0, 0);
+  margin: auto;
+  border: none;
+}
+
+@media (max-width: 1800px) {
+  nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    margin: auto;
+    margin-left: 5%;
+    margin-top: 1%;
+    z-index: 1000; /* Ensure it has the highest z-index */
+  }
+
+  .Jumbo-text-with-lines {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    top: 10px;
+    gap: 50px;
+    margin: auto;
+    z-index: 99;
+    border: none;
+  }
+
+  .Jumbo-text-with-lines > hr {
+    width: 2px;
+    height: 130px;
+    background-color: rgb(255, 0, 0);
+    margin: auto;
+    border: none;
+  }
 }
 
 .Navigation-buttons {
@@ -90,17 +146,21 @@ img {
 
 /*the jumbotron sectoin*/
 .gradient-overlay {
-  height: 100%;
+  height: 62%;
+  overflow: hidden;
 }
 
-video {
+iframe {
   width: 100%;
   color: #000;
   opacity: 20%;
   border: none;
   pointer-events: auto;
+  height: 100%;
+  object-fit: cover;
+  scale: 2;
 }
-
+/* 
 .Jumbo-text-with-lines {
   position: absolute;
   justify-content: center;
@@ -120,7 +180,7 @@ video {
   background-color: rgb(255, 0, 0);
   margin: auto;
   border: none;
-}
+} */
 
 .text-holder {
   text-align: center;
@@ -131,14 +191,15 @@ video {
 }
 
 .text-holder h1 {
-  display: inline-block;
-  font-size: 3.5rem;
+  display: inline-block; /* styling the jumbotron h1 */
+  font-size: 2.6rem;
 }
 
 .text-holder h3 {
-  display: inline-block;
+  display: inline-block; /* Styling the jumbotron h3 */
   max-width: 500px;
   margin: auto;
+  font-size: 1rem;
 }
 
 .little-questions {
@@ -148,6 +209,7 @@ video {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #3a0e0eac;
+  height: 20%;
 }
 
 .sturbborn {
@@ -717,21 +779,6 @@ footer {
   /* Styles to apply when the viewport height is 1200px or less */
 
   /** the styling for the jumbotron **/
-  .Jumbo-text-with-lines > hr {
-    height: 130px; /* styling the red lines in th jumbotron  */
-  }
-
-  .text-holder h1 {
-    display: inline-block; /* styling the jumbotron h1 */
-    font-size: 2.6rem;
-  }
-
-  .text-holder h3 {
-    display: inline-block; /* Styling the jumbotron h3 */
-    max-width: 500px;
-    margin: auto;
-    font-size: 1rem;
-  }
 
   .the-multidiverse-learning-tag {
     height: 100%;
@@ -943,9 +990,9 @@ footer {
     height: 700px;
   }
 
-  video {
-    scale: 2;
+  iframe {
     height: 100%;
+    scale: 2;
   }
 
   .text-holder > h1 {
@@ -1075,8 +1122,8 @@ footer {
     font-size: 15px;
   }
 
-  video {
-    scale: 5;
+  iframe {
+    scale: 2.5;
   }
 
   .The-first-Stack {
@@ -1226,11 +1273,19 @@ footer {
   .ping {
     height: 800px;
   }
+
+  iframe {
+    scale: 2.7;
+  }
 }
 
 @media (max-width: 450px) {
   .The-first-Stack {
     height: 1550px;
+  }
+
+  iframe {
+    scale: 3.2;
   }
 
   .the-multidiverse-learning-tag > ul {
@@ -1265,6 +1320,10 @@ footer {
 }
 
 @media (max-width: 400px) {
+  iframe {
+    scale: 3.4;
+  }
+
   .The-first-Stack {
     height: 1400px;
   }
@@ -1295,6 +1354,10 @@ footer {
 }
 
 @media (max-width: 370px) {
+  iframe {
+    scale: 4;
+  }
+
   .The-first-Stack {
     height: 1200px;
   }
