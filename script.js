@@ -23,13 +23,13 @@ $(".register").on("click", () => {
 });
 
 $("#Cotonou").on("click", () => {
-  window.location.href = "AboutCotonou.html";
+  window.location.href = "AboutCotonu.html";
 });
 
 $("#Excursion").on("click", () => {
   window.location.href = "Excursion.html";
 });
 
-$("#SchoolBuilding").on("click", () => {
+$("#schoolBuilding").on("click", () => {
   window.location.href = "OurUniversity.html";
 });
