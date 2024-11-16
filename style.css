@@ -25,17 +25,21 @@ section {
   border: none;
   font-family: merriweather;
 }
-
 nav {
   width: 1600px;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
+  left: 5%;
   align-items: center;
   margin: auto;
-  margin-left: 5%;
-  margin-top: 1%;
+  padding: 10px;
   z-index: 1000; /* Ensure it has the highest z-index */
+}
+
+.blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.473);
 }
 
 .Jumbo-text-with-lines {
@@ -130,6 +134,9 @@ nav {
   cursor: pointer;
   font-size: 24px; /* Font size for the icons */
   transition: background-color 0.3s; /* Transition for hover effect */
+}
+.maker {
+  color: white;
 }
 
 .Navigation-buttons > ul > li > button > i {
@@ -785,11 +792,10 @@ footer {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     align-items: center;
     margin: auto;
-    margin-left: 5%;
-    margin-top: 1%;
+
     z-index: 1000; /* Ensure it has the highest z-index */
   }
 
@@ -1158,6 +1164,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+  nav {
+    height: 70px;
+    width: 100%;
+    left: 0%;
+  }
   nav > .logo > img {
     width: 100px;
   }
@@ -1165,7 +1176,7 @@ footer {
   .Navigation-buttons > ul {
     gap: 1%;
     position: relative;
-    left: 15%;
+    right: 1%;
   }
 
   /* .Navigation-buttons > ul > li > button {
